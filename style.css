@@ -628,8 +628,9 @@ body::-webkit-scrollbar-thumb {
   height: 65px;
   margin-left: 200px;
 }
-form input[type=radio]{
+input[type='radio'] {
   margin-top: 0;
+  accent-color: #17DCC7;
 }
 @media screen and (min-width:0px) and (max-width: 1310px) {
   .section5{
