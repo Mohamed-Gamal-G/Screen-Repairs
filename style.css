@@ -2,6 +2,17 @@
   margin: 0;
   padding: 0;
 }
+a{
+  list-style: none;
+  text-decoration: none;
+}
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+body::-webkit-scrollbar-thumb {
+  background: rgba(23, 220, 199, 1);
+  border-radius: 100vw;
+}
 /*  ===================== hero_section =====================  */
 .hero_section {
   background-image: url(imgs/image\ 2.png);
@@ -47,8 +58,9 @@
   letter-spacing: 0em;
   text-align: center;
   color: rgba(23, 220, 199, 1);
-  margin: 0 219px auto;
+  /* margin: 0 219px auto; */
   margin-bottom: 117px;
+  margin-top: 30px;
 }
 @media screen and (max-width: 1510px) {
   .hero_section {
@@ -57,10 +69,10 @@
 }
 @media screen and (max-width: 1280px) {
   .hero_section p {
-    margin: 0;
+    margin: 50px 0 30px 0;
   }
 }
-@media screen and (min-width:100px) and (max-width: 1265px) {
+@media screen and (min-width:100px) and (max-width: /* 1265px */767px) {
   .hero_section h1 {
     margin-top: 60px;
   }
@@ -73,7 +85,7 @@
 }
 @media screen and (min-width:768px) and (max-width: 965px) {
   .hero_section {
-    background-size: 168%;
+    background-size: 194%;
   }
 }
 .section_black {
@@ -83,7 +95,7 @@
   background-image: url(imgs/Rectangle\ 6.png);
   background-size: 100%;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px/* 1024px */) {
   .hero_section {
     background-image: url(imgs/image\ \(2\).png);
     background-size: cover;
@@ -305,7 +317,6 @@
   text-align: left;
   color: rgba(25, 25, 25, 1);
   margin-top: 21px;
-
 }
 @media screen and (min-width:0px) and (max-width: 1130px) {
   .section3 {
@@ -322,7 +333,6 @@
     max-width: 100%;
     margin-left: 0;
   }
-
   .section3 .location .line {
     width: 95%;
   }
@@ -361,6 +371,7 @@
 .section4 {
   margin: 202px 0 0 57px;
   display: flex;
+  overflow: hidden;
 }
 .section4 .cotiner {
   margin-left: 79px;
@@ -454,9 +465,31 @@
 .section4 .REVIEWS .mob-iphone {
   display: none;
 }
-@media screen and (min-width:0px) and (max-width:1024px) {
+@media screen and (min-width:0px) and (max-width: 1310px) {
+  .section4 > img:first-child{
+    width: 500px;
+  }
+  .section4 .cotiner {
+    margin-left: 25px;
+  }
+  .section4 .REVIEWS .mob-iphone {
+    display: block;
+    width: 349px;
+    height: 349px;
+  }
+  .section3 .location .line{
+    width: 95%;
+  }
+}
+@media screen and (min-width:0px) and (max-width: 1310px) {
+  .section4 > img:first-child{
+    width: 329.54px;
+  }
+}
+@media screen and (min-width:0px) and (max-width:1024px/* 1224px */) {
   .section4 {
     flex-direction: column;
+    margin-left: 0;
   }
   .section4 .cotiner {
     margin-left: 25px;
@@ -470,10 +503,7 @@
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 1024px) {
-  .section4 {
-    margin: 29px 0 0 0px;
-  }
+@media screen and (max-width: /* 1024px */1224px) {
   .section4 img {
     width: 329.54px;
   }
@@ -494,19 +524,19 @@
   .last-line {
     display: none;
   }
-}
-@media screen and (min-width:0px) and (max-width: 1310px) {
-  .section4 .REVIEWS .mob-iphone {
-    display: block;
-    width: 349px;
-    height: 349px;
+  .section4 .title img {
+    width: 171px;
+    height: 90px;
   }
 }
+  .section4 .title img {
+    width: 171px;
+    height: 90px;
+  }
 @media screen and (max-width: 450px) {
   .section4 .REVIEWS .review .data .Kreis {
     display: none;
   }
-
   .section4 .REVIEWS .review .data .Nmae {
     margin-left: 0;
   }
@@ -539,6 +569,9 @@
 .section5 form {
   margin-top: 63px;
 }
+.section5 form input{
+  outline: #17DCC7;
+}
 .section5 select {
   background-color: rgba(25, 25, 25, 1);
   color: #fff;
@@ -566,7 +599,7 @@
   height: 28px;
 }
 .section5 .radio1 {
-  margin-left: 125px;
+  margin-left: 100px;
 }
 .section5 .radio3 {
   margin-left: 200px;
@@ -582,6 +615,11 @@
   color: rgba(255, 255, 255, 1);
   margin-bottom: 45px;
 }
+.continerx{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
 #number {
   background-color: rgba(25, 25, 25, 1);
   color: #fff;
@@ -589,6 +627,9 @@
   width: 421px;
   height: 65px;
   margin-left: 200px;
+}
+form input[type=radio]{
+  margin-top: 0;
 }
 @media screen and (min-width:0px) and (max-width: 1310px) {
   .section5{
@@ -603,16 +644,17 @@
   .section5 form {
     margin-left: 25px;
   }
-  .continerx {
+  .section5 select {
+    margin-left: 200px;
+  }
+}
+@media screen and (max-width:1024px) {
+  .continerx{
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
   .section5 select {
     margin-left: 0;
   }
-}
-@media screen and (max-width:1024px) {
   .section5 .radio1 {
     margin-left: 150px;
   }
@@ -634,15 +676,8 @@
     line-height: 44px;
   }
 }
-.continerx {
-  display: flex;
-}
-.continerx {
-  display: flex;
-}
 .continer-radios {
   display: flex;
-
 }
 @media screen and (max-width: 1024px) {
   .section5 .line {
@@ -664,3 +699,16 @@
   }
 }
 /*  // ===================== section5 =====================  // */
+/*  ===================== media mobile screen replace images =====================   */
+.mobile{
+  display: none;
+}
+@media screen and (max-width: 1024px){
+   .large_screen{
+    display: none;
+  }
+   .mobile{
+    display: block;
+  }
+}
+/*  // ===================== media mobile screen replace images =====================  // */

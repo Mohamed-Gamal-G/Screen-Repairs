@@ -6,10 +6,9 @@
   <title>Screen Repairs</title>
   <link rel="stylesheet" href="style.css">
   <!------------------- Fonts ------------------->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&family=Libre+Bodoni:ital,wght@0,400;0,700;1,400&family=Red+Hat+Display:wght@700&display=swap" rel="stylesheet">
-
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <!------------------- hero_section ------------------->
@@ -21,7 +20,7 @@
     </a>
     <h1>
       Forward-Thinking iPhone
-      <br>
+      <br />
        Screen Repairs
     </h1>
     <img class="arrow" src="imgs/Arrow 1.png" alt="">
@@ -45,15 +44,18 @@
     </p>
     <div class="cards">
       <div class="card">
-        <img src="imgs/Vector (2).png" alt="">
+        <img class="large_screen" src="imgs/Vector (2).png" alt="">
+        <img class="mobile" src="imgs/Box-mobile.png" alt="">
         <h4>Flat-packed box will fit through mailbox</h4>
       </div>
       <div class="card">
-        <img src="imgs/Group.png" alt="">
+        <img class="large_screen" src="imgs/Group.png" alt="">
+        <img class="mobile" src="imgs/Security-mobile.png" alt="">
         <h4>Phone is insured up to £1500 during transit</h4>
       </div>
       <div class="card">
-        <img src="imgs/Vector (3).png" alt="">
+        <img class="large_screen" src="imgs/Vector (3).png" alt="">
+        <img class="mobile" src="imgs/Email-mobile.png" alt="">
         <h4>Emails sent at every step of the process</h4>
       </div>
     </div>
@@ -65,7 +67,8 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d300.32587044976685!2d-1.1707851!3d52.9734845!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879c195c8e4f949%3A0x66145b408d0f4409!2sChelsea%20House%2C%20Chelsea%20St%2C%20New%20Basford%2C%20Nottingham%20NG7%207HP%2C%20Ujedinjeno%20Kraljevstvo!5e0!3m2!1shr!2seg!4v1708810825642!5m2!1shr!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
     <div class="location">
-      <img src="imgs/Vector (4).png" alt="">
+      <img class="large_screen" src="imgs/Vector (4).png" alt="">
+      <img class="mobile" src="imgs/location-mobile.png" alt="">
       <h5>
         Chelsea House,
         <br>
@@ -81,7 +84,8 @@
   <!------------------- // section3 // ------------------->
   <!------------------- section4 ------------------->
   <section class="section4">
-    <img src="imgs/Group 10.png" alt="">
+    <img class="large_screen" src="imgs/Group 10.png" alt="">
+    <img class="mobile" src="imgs/before-after-mobile.png" alt="">
     <div class="cotiner">
       <div class="REVIEWS">
         <div class="title">
@@ -141,7 +145,7 @@
       <img class="PC" src="imgs/image 6.png" alt="">
       <form action="" method="POST">
         <div class="continerx">
-        <label for="iPhone">Select your iPhone model</label>
+        <h4 >Select your iPhone model</h4>
         <select id="model" name="model">
           <option value="iPhone 12 Mini">iPhone 12 Mini</option>
           <option value="iPhone 12">iPhone 12</option>
@@ -164,21 +168,17 @@
         <br>
         <div class="continer-radios">
         <h4>Does the screen work perfectly?</h4>
-        <div class="radios">
-          
+        <div class="radios">   
           <input type="radio" class="radio radio1" name="answer1" value="Yes" />
-          <label>
           <label name="radio">Yes</label>
           <input type="radio" class="radio" name="answer1" value="No">
           <label name="No">No</label>
-        </label>
         </div>
       </div>
       <div class="continer-radios">
       <h4>Are there any lines / black 
         <br> &nbsp;&nbsp;spots on your screen?</h4>
-        <div class="radios">
-          
+        <div class="radios">  
           <input type="radio" class="radio radio3" name="answer2" value="Yes" />
           <label name="Yes">Yes</label>
           <input type="radio" class="radio" name="answer2" value="No">
@@ -186,7 +186,7 @@
         </div>
       </div>
       <div class="continer-radios">
-        <label for="cars">Enter your phone number</label>
+        <label for="number">Enter your phone number</label>
         <input type="number" id="number">
       </div>
       </form>
